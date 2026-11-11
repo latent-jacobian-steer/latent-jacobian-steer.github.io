@@ -57,8 +57,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, summary:focus-visib
 
 /* One type scale and one section rhythm across the page. */
 .section { padding: 80px max(calc((100vw - 1160px) / 2), 5vw); }
-.section-heading, .results-heading { max-width: 960px; margin: 0 auto 36px; text-align: center; }
-.lead { max-width: 900px; margin: 24px auto 0; color: var(--muted); font-size: var(--body); line-height: 1.75; }
+.section-heading, .results-heading { max-width: 1180px; margin: 0 auto 36px; text-align: center; }
+.lead { max-width: 1120px; margin: 24px auto 0; color: var(--muted); font-size: var(--body); line-height: 1.75; }
 .lead strong { color: var(--ink); font-weight: 600; }
 .showcase, .results, .all-runs { background: var(--soft); }
 .idea, .comparison, .controllers { background: #fff; }
@@ -214,9 +214,9 @@ footer p:last-child { margin: 0 0 0 auto; }
 .times-table tbody th[scope="row"] { text-align: left; }
 
 /* Subsections inside a results section. */
-.subsection-title { max-width: 960px; margin: 56px auto 0; text-align: center; font-size: 1.375rem; font-weight: 600; }
+.subsection-title { max-width: 1180px; margin: 56px auto 0; text-align: center; font-size: 1.375rem; font-weight: 600; }
 .subsection-title + .lead { margin-top: 12px; margin-bottom: 28px; text-align: center; }
-#reliability .table-wrap, .measure-table { max-width: 760px; margin: 0 auto; }
+#reliability .table-wrap, .measure-table { max-width: 960px; margin: 0 auto; }
 #reliability .demo-grid { margin-top: 32px; }
 .pair-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 900px; margin: 0 auto; }
 tr.group th { padding-top: 22px; font-size: var(--support); font-weight: 600; color: var(--muted); background: none; }
