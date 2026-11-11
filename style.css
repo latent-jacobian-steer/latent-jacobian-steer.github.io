@@ -221,3 +221,5 @@ footer p:last-child { margin: 0 0 0 auto; }
 .pair-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 900px; margin: 0 auto; }
 tr.group th { padding-top: 22px; font-size: var(--support); font-weight: 600; color: var(--muted); background: none; }
 .measure-table td { font-size: 1.125rem; }
+.pair-grid { margin-top: 32px; }
+tr.time-row th, tr.time-row td { color: var(--muted); }
