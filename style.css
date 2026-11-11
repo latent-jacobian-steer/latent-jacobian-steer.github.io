@@ -235,3 +235,9 @@ tr.time-row th, tr.time-row td { color: var(--muted); }
   .times-table th, .times-table td { white-space: nowrap; }
   .subsection-title { margin-top: 40px; }
 }
+
+/* Measurement tables: fixed columns so both tables line up; units sit with the row label. */
+.measure-table { table-layout: fixed; max-width: 760px; }
+.measure-table th:first-child { width: 46%; }
+.measure-table th small { color: var(--muted); font-weight: 400; margin-left: 4px; }
+.measure-table td, .measure-table thead th:not(:first-child) { text-align: center; }
