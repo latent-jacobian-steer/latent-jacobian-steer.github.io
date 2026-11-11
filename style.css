@@ -223,3 +223,15 @@ tr.group th { padding-top: 22px; font-size: var(--support); font-weight: 600; co
 .measure-table td { font-size: 1.125rem; }
 .pair-grid { margin-top: 32px; }
 tr.time-row th, tr.time-row td { color: var(--muted); }
+
+/* Phones: stack paired videos and fit result tables to the screen. */
+@media (max-width: 700px) {
+  .pair-grid { grid-template-columns: 1fr; }
+  table th, table td { white-space: normal; padding: 12px 6px; }
+  td { font-size: 1rem; }
+  td small { font-size: .75rem; }
+  thead th { font-size: .8rem; }
+  .measure-table td { font-size: .95rem; }
+  .times-table th, .times-table td { white-space: nowrap; }
+  .subsection-title { margin-top: 40px; }
+}
