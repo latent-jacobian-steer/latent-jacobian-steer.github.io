@@ -1,0 +1,134 @@
+{
+  "search_cost": {
+    "source": "Ten-seed BFM-Zero decision logs (seeds 12, 10, 19, 2027, 2004, 1264, 2681, 752, 2360, 2981)",
+    "definition": "Candidate steps spent by all runs until reaching each effect, or until stopping, divided by the runs that reached it."
+  },
+  "comparisons": {
+    "selection": "Most effects, then shortest search, per method",
+    "frames": "Seven evenly spaced frames",
+    "runs": {
+      "hurdle": [
+        {
+          "method": "cem_ljs",
+          "seed": 2027,
+          "effects": 10,
+          "total": 10
+        },
+        {
+          "method": "cem_direct_z",
+          "seed": 19,
+          "effects": 10,
+          "total": 10
+        },
+        {
+          "method": "cem_residual_bfm",
+          "seed": 2360,
+          "effects": 10,
+          "total": 10
+        }
+      ],
+      "shutter": [
+        {
+          "method": "cem_ljs",
+          "seed": 2360,
+          "effects": 5,
+          "total": 5
+        },
+        {
+          "method": "cem_direct_z",
+          "seed": 12,
+          "effects": 1,
+          "total": 5
+        },
+        {
+          "method": "cem_residual_bfm",
+          "seed": 1264,
+          "effects": 4,
+          "total": 5
+        }
+      ],
+      "door_cube": [
+        {
+          "method": "cem_ljs",
+          "seed": 10,
+          "effects": 6,
+          "total": 6
+        },
+        {
+          "method": "cem_direct_z",
+          "seed": 2360,
+          "effects": 6,
+          "total": 6
+        },
+        {
+          "method": "cem_residual_bfm",
+          "seed": 10,
+          "effects": 3,
+          "total": 6
+        }
+      ]
+    }
+  },
+  "assembly_comparisons": {
+    "runs": {
+      "tight_insertion": [
+        {
+          "method": "cem_ljs",
+          "seed": 1602613270,
+          "effects": 3,
+          "total": 3
+        },
+        {
+          "method": "cem_direct_g",
+          "seed": 1602613270,
+          "effects": 3,
+          "total": 3
+        }
+      ],
+      "beam_assembly_step1": [
+        {
+          "method": "cem_ljs",
+          "seed": 1284918341,
+          "effects": 3,
+          "total": 3
+        },
+        {
+          "method": "cem_direct_g",
+          "seed": 929560953,
+          "effects": 3,
+          "total": 3
+        }
+      ],
+      "beam_assembly_step2": [
+        {
+          "method": "cem_ljs",
+          "seed": 1370732405,
+          "effects": 4,
+          "total": 4
+        },
+        {
+          "method": "cem_direct_g",
+          "seed": 747747906,
+          "effects": 4,
+          "total": 4
+        }
+      ],
+      "screwing": [
+        {
+          "method": "cem_ljs",
+          "seed": 929560953,
+          "effects": 4,
+          "total": 4
+        },
+        {
+          "method": "cem_direct_g",
+          "seed": 929560953,
+          "effects": 4,
+          "total": 4
+        }
+      ]
+    },
+    "videos": "Saved joint positions rendered by render_site_videos.py"
+  },
+  "generator": "make_figures.py"
+}

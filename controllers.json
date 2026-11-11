@@ -1,0 +1,43 @@
+[
+ {
+  "controller": "ASE",
+  "label": "ASE",
+  "title": "Door opening and gap traversal",
+  "description": "CEM-LJS steers a frozen ASE humanoid to open a door, jump across a 0.8 m gap, and land in stable standing.",
+  "src": "assets/videos/ase_door_gap.mp4",
+  "poster": "assets/posters/ase_door_gap.jpg",
+  "sha256": "09d6989d406fd7c3ae71a9fc4f70fe8c1e3a25679b61affe1ab6e5ce3958c073",
+  "verification_sha256": "2f99316dd05ae9535c4f61ba9d4e61bfd1660887db399eccda4625c65dec0eba",
+  "generation_method": "CEM-LJS"
+ },
+ {
+  "controller": "FB-MEBE",
+  "label": "FB-MEBE",
+  "title": "Quadruped box pushing",
+  "description": "CEM-LJS steers a frozen FB-MEBE quadruped to push a 5.5 kg box 1.49 m, stop 1.71 cm from the target, and hold its position.",
+  "src": "assets/videos/fb_mebe_box_push.mp4",
+  "poster": "assets/posters/fb_mebe_box_push.jpg",
+  "sha256": "1d3654c4df5b421bf44fa0d195d7017686a34836b69716e1e48c506732a5b7ad",
+  "verification_sha256": "e99bc0ee3719b895aef336272c39a0832005ad19a90bbe1ba0244964277c36c8",
+  "generation_method": "CEM-LJS"
+ },
+ {
+  "controller": "SPiRL",
+  "label": "SPiRL",
+  "title": "Cube retrieval and cabinet closure",
+  "description": "CEM-LJS steers a frozen SPiRL skill decoder to open the cabinet, grasp and extract the cube, carry it beneath the door, and close the cabinet.",
+  "src": "assets/videos/spirl_cube_cabinet.mp4",
+  "poster": "assets/posters/spirl_cube_cabinet.jpg",
+  "sha256": "d813dd231f074bb50082ab31ada5a11e3f56bf8237bf5790b127221f5fd22679",
+  "generation_method": "CEM-LJS"
+ },
+ {
+  "controller": "BFM-Zero in Isaac Sim",
+  "label": "Isaac Sim",
+  "title": "Breadbox pick, carry and place",
+  "description": "CEM-LJS steers the same frozen BFM-Zero humanoid in a different simulator, PhysX, to lift a bread box from one platform, carry it, and set it down on another.",
+  "src": "assets/videos/breadbox_physx.mp4",
+  "poster": "assets/posters/breadbox_physx.jpg",
+  "sha256": "80312718deb4a448a11a91bac2ca5d4c575b3aad8f6f6242f24e97c5577dbfa3"
+ }
+]
