@@ -217,7 +217,7 @@ footer p:last-child { margin: 0 0 0 auto; }
 .subsection-title { max-width: 1180px; margin: 56px auto 0; text-align: center; font-size: 1.375rem; font-weight: 600; }
 .subsection-title + .lead { margin-top: 12px; margin-bottom: 28px; text-align: center; }
 #reliability .table-wrap, .measure-table { max-width: 960px; margin: 0 auto; }
-#reliability .demo-grid { margin-top: 32px; }
+#reliability .demo-grid, #minimal-definitions .demo-grid { margin-top: 32px; }
 .pair-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 900px; margin: 0 auto; }
 tr.group th { padding-top: 22px; font-size: var(--support); font-weight: 600; color: var(--muted); background: none; }
 .measure-table td { font-size: 1.125rem; }
@@ -241,3 +241,10 @@ tr.time-row th, tr.time-row td { color: var(--muted); }
 .measure-table th:first-child { width: 46%; }
 .measure-table th small { color: var(--muted); font-weight: 400; margin-left: 4px; }
 .measure-table td, .measure-table thead th:not(:first-child) { text-align: center; }
+
+/* Minimal-definitions videos: cards come in pairs (CEM-LJS, then a baseline on the same path and seed).
+   Wide screens fill the three columns top to bottom, so each baseline sits under its CEM-LJS run;
+   two- and one-column layouts keep the default row order, so each pair stays together. */
+@media (min-width: 1001px) {
+  .demo-grid.pairs-by-column { grid-auto-flow: column; grid-template-rows: repeat(2, auto); }
+}
