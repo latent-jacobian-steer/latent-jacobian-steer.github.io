@@ -62,10 +62,6 @@
  },
  "assembly": {
   "tasks": {
-   "tight_insertion": {
-    "name": "Tight insertion",
-    "effects": 3
-   },
    "beam_assembly_step1": {
     "name": "Beam assembly, first part",
     "effects": 3
@@ -77,6 +73,10 @@
    "screwing": {
     "name": "Screwing",
     "effects": 4
+   },
+   "tight_insertion": {
+    "name": "Tight insertion",
+    "effects": 3
    }
   },
   "methods": {
@@ -84,10 +84,6 @@
    "cem_direct_g": "Direct goal CEM"
   },
   "compare": {
-   "tight_insertion": {
-    "cem_ljs": 875095668,
-    "cem_direct_g": 1602613270
-   },
    "beam_assembly_step1": {
     "cem_ljs": 1284918341,
     "cem_direct_g": 929560953
@@ -99,6 +95,10 @@
    "screwing": {
     "cem_ljs": 1284918341,
     "cem_direct_g": 929560953
+   },
+   "tight_insertion": {
+    "cem_ljs": 875095668,
+    "cem_direct_g": 1602613270
    }
   }
  },
@@ -196,22 +196,6 @@
    }
   },
   "assembly": {
-   "tight_insertion": {
-    "cem_ljs": {
-     "successes": 5,
-     "mean_seconds": 103.76533653181977,
-     "mean": 2,
-     "sd": 1.0540925533894598,
-     "best_seconds": 68.70610221195966
-    },
-    "cem_direct_g": {
-     "successes": 4,
-     "mean_seconds": 100.02523927664151,
-     "mean": 1.8,
-     "sd": 1.0327955589886446,
-     "best_seconds": 21.546904757153243
-    }
-   },
    "beam_assembly_step1": {
     "cem_ljs": {
      "successes": 10,
@@ -258,6 +242,22 @@
      "mean": 1.8,
      "sd": 1.6193277068654826,
      "best_seconds": 88.28390346700326
+    }
+   },
+   "tight_insertion": {
+    "cem_ljs": {
+     "successes": 5,
+     "mean_seconds": 103.76533653181977,
+     "mean": 2,
+     "sd": 1.0540925533894598,
+     "best_seconds": 68.70610221195966
+    },
+    "cem_direct_g": {
+     "successes": 4,
+     "mean_seconds": 100.02523927664151,
+     "mean": 1.8,
+     "sd": 1.0327955589886446,
+     "best_seconds": 21.546904757153243
     }
    }
   }
@@ -1705,246 +1705,6 @@
   },
   {
    "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 929560953,
-   "effects": 3,
-   "total": 3,
-   "seconds": 106.1,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_929560953.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_929560953.jpg",
-   "sha256": "7dcd6b40547194932130f40ec3c7a30aa97dc662828e67f5c69bb6f9e264080c"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 875095668,
-   "effects": 3,
-   "total": 3,
-   "seconds": 76.0,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_875095668.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_875095668.jpg",
-   "sha256": "32cc45c18314133482934c02fe01fdc8d672df6629e6f82fa388839d57a10d73"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 1769421694,
-   "effects": 3,
-   "total": 3,
-   "seconds": 78.3,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1769421694.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1769421694.jpg",
-   "sha256": "386ed9c95237ab0fa47838841534f6a64a56f0dfdc5acbf02ba827a205780a11"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 1418357545,
-   "effects": 3,
-   "total": 3,
-   "seconds": 87.8,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1418357545.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1418357545.jpg",
-   "sha256": "5f2f62ae1820892aba390687ccb21651204da423ec15b1d74b2bd21e4b98b0da"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 885480420,
-   "effects": 1,
-   "total": 3,
-   "seconds": 116.2,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_885480420.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_885480420.jpg",
-   "sha256": "478bce08960b4f9158dc14b24aabdcf8197f3b4c48a55833b2d3c7fdb36c718b"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 1284918341,
-   "effects": 1,
-   "total": 3,
-   "seconds": 132.5,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1284918341.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1284918341.jpg",
-   "sha256": "bafeff510359281bc75c48c2389a8e825ef47b76aeadc9d3b731631bc64ee121"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 747747906,
-   "effects": 1,
-   "total": 3,
-   "seconds": 126.0,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_747747906.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_747747906.jpg",
-   "sha256": "0abd17939c5cfff6edecf55dc55b117f2ed66094fff7701b04510f94f539c3a9"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 2023936781,
-   "effects": 1,
-   "total": 3,
-   "seconds": 136.3,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_2023936781.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_2023936781.jpg",
-   "sha256": "954307c39b799dd2336530add7ad97e9d135d5b467feb292b41f99ca94e4dd2d"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 1602613270,
-   "effects": 3,
-   "total": 3,
-   "seconds": 68.7,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1602613270.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1602613270.jpg",
-   "sha256": "7b6b40cae4211e51ca8af489bc796d58b4638ea09c07042bf2a32bd93716aa4a"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_ljs",
-   "seed": 1370732405,
-   "effects": 1,
-   "total": 3,
-   "seconds": 109.7,
-   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1370732405.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1370732405.jpg",
-   "sha256": "0beea1cf105cf828026c1c1da9b2262b92accc0c33948b3320d5df81c0b4cf85"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 929560953,
-   "effects": 1,
-   "total": 3,
-   "seconds": 112.3,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_929560953.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_929560953.jpg",
-   "sha256": "7ea1930619c72f9d42f0e1251d1d89423225b76c2585cd5326c65ef676f91e0c"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 875095668,
-   "effects": 1,
-   "total": 3,
-   "seconds": 124.7,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_875095668.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_875095668.jpg",
-   "sha256": "eb720f930c779f6585d04d47302e12cfce584ba7e37bcc764a37f9634b432e97"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 1769421694,
-   "effects": 3,
-   "total": 3,
-   "seconds": 35.3,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1769421694.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1769421694.jpg",
-   "sha256": "0fc3a85541235d3fefed39f821081586e48d80c41fdfbc4e6007a9f28d6643b8"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 1418357545,
-   "effects": 1,
-   "total": 3,
-   "seconds": 128.1,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1418357545.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1418357545.jpg",
-   "sha256": "68603231b4b804a1311b385536c4e9c7b15f8fb278068f500772569bb3492a0d"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 885480420,
-   "effects": 3,
-   "total": 3,
-   "seconds": 95.2,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_885480420.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_885480420.jpg",
-   "sha256": "56c8b28f4607e6fa0e054417e1c0b5bfa38d410232678e535f60a133adc02a84"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 1284918341,
-   "effects": 1,
-   "total": 3,
-   "seconds": 127.3,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1284918341.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1284918341.jpg",
-   "sha256": "beb32b92fb5f9dad3576db06fdb9aa1d3aed65655c3473838d2c4b5afb3a5a24"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 747747906,
-   "effects": 3,
-   "total": 3,
-   "seconds": 102.9,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_747747906.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_747747906.jpg",
-   "sha256": "ab845625eb71e89d12869804cddcf628fa73903ed166944b650535defa91a7ef"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 2023936781,
-   "effects": 1,
-   "total": 3,
-   "seconds": 123.8,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_2023936781.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_2023936781.jpg",
-   "sha256": "8ce68c521334096008a74cc556f50b472dfb3e6ab747fab137b123ad7a1047c1"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 1602613270,
-   "effects": 3,
-   "total": 3,
-   "seconds": 21.5,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1602613270.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1602613270.jpg",
-   "sha256": "dfb814959a6935d89140daa54ab12f8d894b16936bb32712a9d22263a0f98b13"
-  },
-  {
-   "group": "assembly",
-   "task": "tight_insertion",
-   "method": "cem_direct_g",
-   "seed": 1370732405,
-   "effects": 1,
-   "total": 3,
-   "seconds": 129.0,
-   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1370732405.mp4",
-   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1370732405.jpg",
-   "sha256": "9c973b396c528977367e51a4f218d39fd8d55da055ce3514fc75e79876a145cc"
-  },
-  {
-   "group": "assembly",
    "task": "beam_assembly_step1",
    "method": "cem_ljs",
    "seed": 929560953,
@@ -2662,6 +2422,246 @@
    "src": "assets/videos/assembly/screwing_cem_direct_g_1370732405.mp4",
    "poster": "assets/posters/assembly/screwing_cem_direct_g_1370732405.jpg",
    "sha256": "b2f54ee58ec9539fac05a19470b4868cf3cb54ffc470c47b669e9136be714de4"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 929560953,
+   "effects": 3,
+   "total": 3,
+   "seconds": 106.1,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_929560953.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_929560953.jpg",
+   "sha256": "7dcd6b40547194932130f40ec3c7a30aa97dc662828e67f5c69bb6f9e264080c"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 875095668,
+   "effects": 3,
+   "total": 3,
+   "seconds": 76.0,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_875095668.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_875095668.jpg",
+   "sha256": "32cc45c18314133482934c02fe01fdc8d672df6629e6f82fa388839d57a10d73"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 1769421694,
+   "effects": 3,
+   "total": 3,
+   "seconds": 78.3,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1769421694.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1769421694.jpg",
+   "sha256": "386ed9c95237ab0fa47838841534f6a64a56f0dfdc5acbf02ba827a205780a11"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 1418357545,
+   "effects": 3,
+   "total": 3,
+   "seconds": 87.8,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1418357545.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1418357545.jpg",
+   "sha256": "5f2f62ae1820892aba390687ccb21651204da423ec15b1d74b2bd21e4b98b0da"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 885480420,
+   "effects": 1,
+   "total": 3,
+   "seconds": 116.2,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_885480420.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_885480420.jpg",
+   "sha256": "478bce08960b4f9158dc14b24aabdcf8197f3b4c48a55833b2d3c7fdb36c718b"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 1284918341,
+   "effects": 1,
+   "total": 3,
+   "seconds": 132.5,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1284918341.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1284918341.jpg",
+   "sha256": "bafeff510359281bc75c48c2389a8e825ef47b76aeadc9d3b731631bc64ee121"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 747747906,
+   "effects": 1,
+   "total": 3,
+   "seconds": 126.0,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_747747906.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_747747906.jpg",
+   "sha256": "0abd17939c5cfff6edecf55dc55b117f2ed66094fff7701b04510f94f539c3a9"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 2023936781,
+   "effects": 1,
+   "total": 3,
+   "seconds": 136.3,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_2023936781.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_2023936781.jpg",
+   "sha256": "954307c39b799dd2336530add7ad97e9d135d5b467feb292b41f99ca94e4dd2d"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 1602613270,
+   "effects": 3,
+   "total": 3,
+   "seconds": 68.7,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1602613270.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1602613270.jpg",
+   "sha256": "7b6b40cae4211e51ca8af489bc796d58b4638ea09c07042bf2a32bd93716aa4a"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_ljs",
+   "seed": 1370732405,
+   "effects": 1,
+   "total": 3,
+   "seconds": 109.7,
+   "src": "assets/videos/assembly/tight_insertion_cem_ljs_1370732405.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_ljs_1370732405.jpg",
+   "sha256": "0beea1cf105cf828026c1c1da9b2262b92accc0c33948b3320d5df81c0b4cf85"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 929560953,
+   "effects": 1,
+   "total": 3,
+   "seconds": 112.3,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_929560953.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_929560953.jpg",
+   "sha256": "7ea1930619c72f9d42f0e1251d1d89423225b76c2585cd5326c65ef676f91e0c"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 875095668,
+   "effects": 1,
+   "total": 3,
+   "seconds": 124.7,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_875095668.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_875095668.jpg",
+   "sha256": "eb720f930c779f6585d04d47302e12cfce584ba7e37bcc764a37f9634b432e97"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 1769421694,
+   "effects": 3,
+   "total": 3,
+   "seconds": 35.3,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1769421694.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1769421694.jpg",
+   "sha256": "0fc3a85541235d3fefed39f821081586e48d80c41fdfbc4e6007a9f28d6643b8"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 1418357545,
+   "effects": 1,
+   "total": 3,
+   "seconds": 128.1,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1418357545.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1418357545.jpg",
+   "sha256": "68603231b4b804a1311b385536c4e9c7b15f8fb278068f500772569bb3492a0d"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 885480420,
+   "effects": 3,
+   "total": 3,
+   "seconds": 95.2,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_885480420.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_885480420.jpg",
+   "sha256": "56c8b28f4607e6fa0e054417e1c0b5bfa38d410232678e535f60a133adc02a84"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 1284918341,
+   "effects": 1,
+   "total": 3,
+   "seconds": 127.3,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1284918341.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1284918341.jpg",
+   "sha256": "beb32b92fb5f9dad3576db06fdb9aa1d3aed65655c3473838d2c4b5afb3a5a24"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 747747906,
+   "effects": 3,
+   "total": 3,
+   "seconds": 102.9,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_747747906.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_747747906.jpg",
+   "sha256": "ab845625eb71e89d12869804cddcf628fa73903ed166944b650535defa91a7ef"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 2023936781,
+   "effects": 1,
+   "total": 3,
+   "seconds": 123.8,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_2023936781.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_2023936781.jpg",
+   "sha256": "8ce68c521334096008a74cc556f50b472dfb3e6ab747fab137b123ad7a1047c1"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 1602613270,
+   "effects": 3,
+   "total": 3,
+   "seconds": 21.5,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1602613270.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1602613270.jpg",
+   "sha256": "dfb814959a6935d89140daa54ab12f8d894b16936bb32712a9d22263a0f98b13"
+  },
+  {
+   "group": "assembly",
+   "task": "tight_insertion",
+   "method": "cem_direct_g",
+   "seed": 1370732405,
+   "effects": 1,
+   "total": 3,
+   "seconds": 129.0,
+   "src": "assets/videos/assembly/tight_insertion_cem_direct_g_1370732405.mp4",
+   "poster": "assets/posters/assembly/tight_insertion_cem_direct_g_1370732405.jpg",
+   "sha256": "9c973b396c528977367e51a4f218d39fd8d55da055ce3514fc75e79876a145cc"
   }
  ]
 }
