@@ -71,20 +71,6 @@
   },
   "assembly_comparisons": {
     "runs": {
-      "tight_insertion": [
-        {
-          "method": "cem_ljs",
-          "seed": 1602613270,
-          "effects": 3,
-          "total": 3
-        },
-        {
-          "method": "cem_direct_g",
-          "seed": 1602613270,
-          "effects": 3,
-          "total": 3
-        }
-      ],
       "beam_assembly_step1": [
         {
           "method": "cem_ljs",
@@ -116,7 +102,7 @@
       "screwing": [
         {
           "method": "cem_ljs",
-          "seed": 929560953,
+          "seed": 1284918341,
           "effects": 4,
           "total": 4
         },
@@ -125,6 +111,20 @@
           "seed": 929560953,
           "effects": 4,
           "total": 4
+        }
+      ],
+      "tight_insertion": [
+        {
+          "method": "cem_ljs",
+          "seed": 875095668,
+          "effects": 3,
+          "total": 3
+        },
+        {
+          "method": "cem_direct_g",
+          "seed": 1602613270,
+          "effects": 3,
+          "total": 3
         }
       ]
     },

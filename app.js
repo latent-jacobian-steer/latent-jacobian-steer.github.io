@@ -53,7 +53,7 @@ function renderAssembly(){
 }
 function renderAssemblyFigures(){
  const a=research.assembly;
- $('#assembly-figures').innerHTML=Object.keys(a.tasks).map(t=>`<figure class="paper-figure"><h3>${escapeHTML(a.tasks[t].name)}</h3><div class="figure-scroll"><img alt="Seven frames from the best CEM-LJS and direct goal CEM runs: ${escapeHTML(a.tasks[t].name.toLowerCase())}." loading="lazy" src="assets/figures/${t.replaceAll('_','-')}-comparison.png"/></div></figure>`).join('');
+ $('#assembly-figures').innerHTML=Object.keys(a.tasks).map(t=>`<figure class="paper-figure"><h3>${escapeHTML(a.tasks[t].name)}</h3><div class="figure-scroll"><img alt="Seven frames from the CEM-LJS and direct goal CEM runs shown above: ${escapeHTML(a.tasks[t].name.toLowerCase())}." loading="lazy" src="assets/figures/${t.replaceAll('_','-')}-comparison.png"/></div></figure>`).join('');
 }
 function renderMethodFilter(){
  const methods=research[group(galleryTask)].methods,select=$('#method-filter'),current=select.value;
