@@ -85,11 +85,11 @@
   },
   "compare": {
    "tight_insertion": {
-    "cem_ljs": 1602613270,
+    "cem_ljs": 875095668,
     "cem_direct_g": 1602613270
    },
    "beam_assembly_step1": {
-    "cem_ljs": 1284918341,
+    "cem_ljs": 885480420,
     "cem_direct_g": 929560953
    },
    "beam_assembly_step2": {
@@ -97,7 +97,7 @@
     "cem_direct_g": 747747906
    },
    "screwing": {
-    "cem_ljs": 929560953,
+    "cem_ljs": 1284918341,
     "cem_direct_g": 929560953
    }
   }
