@@ -248,3 +248,9 @@ tr.time-row th, tr.time-row td { color: var(--muted); }
 @media (min-width: 1001px) {
   .demo-grid.pairs-by-column { grid-auto-flow: column; grid-template-rows: repeat(2, auto); }
 }
+
+/* Section backgrounds: one per topic, alternating down the page (set on each section in index.html). */
+.section.tone-soft { background: var(--soft); }
+.section.tone-plain { background: #fff; }
+/* The two assembly sections read as one topic. */
+#assembly-comparison { padding-top: 24px; }
